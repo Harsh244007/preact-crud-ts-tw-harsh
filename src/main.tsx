@@ -1,7 +1,7 @@
 import { render } from "preact";
 import { useState } from "preact/hooks";
 import { Suspense } from "preact/compat";
-import { Home, Navbar, Loading,  Todo } from "./components";
+import { Home, Navbar, Loading, JsonServer, Todo } from "./components";
 import "./index.css";
 
 const App = () => {
@@ -11,6 +11,8 @@ const App = () => {
     switch (activeComponent) {
       case 2:
         return <Todo />;
+      case 3:
+        return <JsonServer />;
       default:
         return <Home />;
     }
