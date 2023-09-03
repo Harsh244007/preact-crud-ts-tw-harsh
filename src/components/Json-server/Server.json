@@ -1,0 +1,11 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Sunny Patel",
+      "phoneNumber": 8141924047,
+      "age": 21,
+      "gender": "Male"
+    }
+  ]
+}
