@@ -27,11 +27,11 @@ const TaskList: FC<TaskListProps> = ({ tasks, onDelete, onEdit }) => {
   };
 
   return (
-    <ul className="list-disc flex flex-col gap-4">
+    <ul className="list-disc flex flex-col gap-col-4 pb-4">
       {tasks.map((task, index) => (
         <li
           key={index}
-          className="flex w-full justify-between items-center space-x-2"
+          className="flex w-full justify-between items-center space-x-2 overflow-auto pb-4"
         >
           {editIndex === index ? (
             <>
